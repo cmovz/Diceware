@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <ctype.h>
 
-#define DEFAULT_DICTIONARY_FILE "dictionary.dice"
+#define DEFAULT_DICTIONARY_FILE "/usr/local/share/cmovz/diceware/dictionary.dice"
 #define MAX_WORD_SIZE 80
 
 typedef struct {
