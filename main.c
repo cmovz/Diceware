@@ -120,8 +120,10 @@ int main(int argc, char* argv[])
   }
 
   //avoid messing up the probability of certain words
-  max_value = UINT32_MAX - (UINT32_MAX % dictionary.word_count) - 1;
-
+  max_value = (uint64_t)0x100000000
+    - ((uint64_t)0x100000000 % dictionary.word_count)
+    - 1;
+  
   while(word_count--){
     char buffer[MAX_WORD_SIZE + 1];
     uint32_t random_n;
